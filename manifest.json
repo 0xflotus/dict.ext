@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Dict search engine",
+  "description": "Adds a search engine that searches dict.cc",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "55"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Dict",
+      "search_url": "https://www.dict.cc/?s={searchTerms}",
+      "keyword": "dict",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
